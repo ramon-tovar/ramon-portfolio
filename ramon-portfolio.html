@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ramon Tovar - Fine Artist</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+      --accent-color: #c084fc;
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--font-family);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--accent-color);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .artwork {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .artwork:hover {
+      transform: translateY(-5px);
+    }
+
+    .artwork img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .artwork-info {
+      padding: 1rem;
+    }
+
+    .artwork-info h3 {
+      margin: 0 0 0.5rem;
+      color: var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ramon Tovar</h1>
+    <p>Fine Artist</p>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="portfolio" class="portfolio">
+    <!-- Example artwork blocks — duplicate as needed -->
+    <div class="artwork">
+      <img src="your-artwork1.jpg" alt="Artwork Title 1" />
+      <div class="artwork-info">
+        <h3>Title of Artwork 1</h3>
+        <p>Medium: Graphite on paper<br>Size: 11x14 in</p>
+      </div>
+    </div>
+    <div class="artwork">
+      <img src="your-artwork2.jpg" alt="Artwork Title 2" />
+      <div class="artwork-info">
+        <h3>Title of Artwork 2</h3>
+        <p>Medium: Colored pencil<br>Size: 8x10 in</p>
+      </div>
+    </div>
+    <!-- Add more blocks like the above -->
+  </section>
+
+  <section id="contact" style="text-align:center; padding: 2rem 1rem;">
+    <h2>Contact</h2>
+    <p>Interested in a commission or collaboration?<br>
+       Email me at <a href="mailto:your@email.com" style="color:var(--accent-color);">your@email.com</a></p>
+    <p>Follow me on Instagram: <a href="https://instagram.com/yourhandle" target="_blank" style="color:var(--accent-color);">@yourhandle</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Ramon Tovar. All rights reserved.
+  </footer>
+
+</body>
+</html>
